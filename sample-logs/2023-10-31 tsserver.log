@@ -1,0 +1,1132 @@
+Info 0    [14:28:39.116] Starting TS Server
+Info 1    [14:28:39.117] Version: 5.2.2
+Info 2    [14:28:39.117] Arguments: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js --useInferredProjectPerProjectRoot --enableTelemetry --cancellationPipeName /var/folders/nh/jm76_9hj4nl0p2p82ylrzc2n086m2c/T/vscode-typescript1082347596/f90ee420e2e55414ba6f/tscancellation-97ab3ab269353721a188.tmp* --logVerbosity verbose --logFile /Users/bcheng/Library/Application Support/Code/logs/20231031T114013/window3/exthost/vscode.typescript-language-features/tsserver-log-bLLCJF/tsserver.log --locale en --noGetErrOnBackgroundUpdate --validateDefaultNpmLocation --useNodeIpc
+Info 3    [14:28:39.117] Platform: darwin NodeVersion: v18.15.0 CaseSensitive: false
+Info 4    [14:28:39.117] ServerMode: undefined hasUnknownServerMode: undefined
+Info 5    [14:28:39.122] Binding...
+Info 6    [14:28:39.126] request:
+    {
+      "seq": 0,
+      "type": "request",
+      "command": "configure",
+      "arguments": {
+        "hostInfo": "vscode",
+        "preferences": {
+          "providePrefixAndSuffixTextForRename": true,
+          "allowRenameOfImportPath": true,
+          "includePackageJsonAutoImports": "auto",
+          "excludeLibrarySymbolsInNavTo": true
+        },
+        "watchOptions": {}
+      }
+    }
+Info 7    [14:28:39.127] Host information vscode
+Info 8    [14:28:39.127] Host watch options changed to undefined, it will be take effect for next watches.
+Info 9    [14:28:39.127] response:
+    {"seq":0,"type":"response","command":"configure","request_seq":0,"success":true}
+Perf 10   [14:28:39.127] 0::configure: async elapsed time (in milliseconds) 0.8507
+Info 11   [14:28:39.127] request:
+    {
+      "seq": 1,
+      "type": "request",
+      "command": "compilerOptionsForInferredProjects",
+      "arguments": {
+        "options": {
+          "module": "ESNext",
+          "moduleResolution": "Node",
+          "target": "ES2020",
+          "jsx": "react",
+          "strictNullChecks": true,
+          "strictFunctionTypes": true,
+          "sourceMap": true,
+          "allowJs": true,
+          "allowSyntheticDefaultImports": true,
+          "allowNonTsExtensions": true,
+          "resolveJsonModule": true
+        }
+      }
+    }
+Perf 12   [14:28:39.128] 1::compilerOptionsForInferredProjects: elapsed time (in milliseconds) 0.6162
+Info 13   [14:28:39.128] response:
+    {"seq":0,"type":"response","command":"compilerOptionsForInferredProjects","request_seq":1,"success":true,"body":true}
+Info 14   [14:28:39.128] request:
+    {
+      "seq": 2,
+      "type": "request",
+      "command": "updateOpen",
+      "arguments": {
+        "changedFiles": [],
+        "closedFiles": [],
+        "openFiles": [
+          {
+            "file": "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts",
+            "fileContent": "export const foo = \"foo\";\n",
+            "projectRootPath": "/Volumes/git/tsserver-new-file-intellisense-bug",
+            "scriptKindName": "TS"
+          }
+        ]
+      }
+    }
+Info 15   [14:28:39.129] Search path: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 16   [14:28:39.129] For info: /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts :: Config file name: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 17   [14:28:39.129] Creating configuration project /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 18   [14:28:39.132] FileWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json 2000 undefined Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Config file
+Info 19   [14:28:39.133] event:
+    {"seq":0,"type":"event","event":"projectLoadingStart","body":{"projectName":"/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json","reason":"Creating possible configured project for /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts to open"}}
+Info 20   [14:28:39.140] Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json : {
+ "rootNames": [
+  "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts"
+ ],
+ "options": {
+  "configFilePath": "/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json"
+ }
+}
+Info 21   [14:28:39.141] DirectoryWatcher:: Added:: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 22   [14:28:39.142] Elapsed:: 0.5805779993534088ms DirectoryWatcher:: Added:: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 23   [14:28:39.143] Starting updateGraphWorker: Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 24   [14:28:39.150] DirectoryWatcher:: Added:: WatchInfo: /applications/visual studio code.app/contents/resources/app/extensions/node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+Info 25   [14:28:39.150] Elapsed:: 0.20676600001752377ms DirectoryWatcher:: Added:: WatchInfo: /applications/visual studio code.app/contents/resources/app/extensions/node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+Info 26   [14:28:39.155] DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules 1 undefined Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Failed Lookup Locations
+Info 27   [14:28:39.155] Elapsed:: 0.18771299906075ms DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules 1 undefined Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Failed Lookup Locations
+Info 28   [14:28:39.489] DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules/@types 1 undefined Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Type roots
+Info 29   [14:28:39.489] Elapsed:: 0.40803700126707554ms DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules/@types 1 undefined Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Type roots
+Info 30   [14:28:39.490] Finishing updateGraphWorker: Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 345.9944660011679ms
+Info 31   [14:28:39.490] Project '/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json' (Configured)
+Info 32   [14:28:39.491] 	Files (8)
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.scripthost.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts
+
+
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.d.ts
+	  Default library for target 'es5'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts
+	  Library referenced via 'es5' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+	  Library referenced via 'dom' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+	  Library referenced via 'webworker.importscripts' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.scripthost.d.ts
+	  Library referenced via 'scripthost' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.d.ts
+	  Library referenced via 'decorators' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	  Library referenced via 'decorators.legacy' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts'
+	foo.ts
+	  Matched by default include pattern '**/*'
+
+Info 33   [14:28:39.491] -----------------------------------------------
+Info 34   [14:28:39.492] FileWatcher:: Added:: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug/package.json 250 undefined WatchType: package.json file
+Info 35   [14:28:39.492] event:
+    {"seq":0,"type":"event","event":"projectLoadingFinish","body":{"projectName":"/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json"}}
+Info 36   [14:28:39.493] event:
+    {"seq":0,"type":"event","event":"telemetry","body":{"telemetryEventName":"projectInfo","payload":{"projectId":"7da768e2c8e50e24b77d46fd6ac91d5d35da5e36a5dfde4bd2ee6eb592d1aa20","fileStats":{"js":0,"jsSize":0,"jsx":0,"jsxSize":0,"ts":1,"tsSize":26,"tsx":0,"tsxSize":0,"dts":7,"dtsSize":1547809,"deferred":0,"deferredSize":0},"compilerOptions":{},"typeAcquisition":{"enable":false,"include":false,"exclude":false},"extends":false,"files":false,"include":false,"exclude":false,"compileOnSave":false,"configFileName":"tsconfig.json","projectType":"configured","languageServiceEnabled":true,"version":"5.2.2"}}}
+Info 37   [14:28:39.493] event:
+    {"seq":0,"type":"event","event":"configFileDiag","body":{"triggerFile":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","configFile":"/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json","diagnostics":[]}}
+Info 38   [14:28:39.494] Project '/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json' (Configured)
+Info 38   [14:28:39.494] 	Files (8)
+
+Info 38   [14:28:39.494] -----------------------------------------------
+Info 38   [14:28:39.494] Open files: 
+Info 38   [14:28:39.494] 	FileName: /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts ProjectRootPath: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 38   [14:28:39.494] 		Projects: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Perf 38   [14:28:39.494] 2::updateOpen: elapsed time (in milliseconds) 366.0559
+Info 39   [14:28:39.494] response:
+    {"seq":0,"type":"response","command":"updateOpen","request_seq":2,"success":true,"performanceData":{"updateGraphDurationMs":345.9944660011679},"body":true}
+Info 40   [14:28:39.494] event:
+    {"seq":0,"type":"event","event":"typingsInstallerPid","body":{"pid":22659}}
+Info 41   [14:28:39.497] request:
+    {
+      "seq": 3,
+      "type": "request",
+      "command": "geterr",
+      "arguments": {
+        "delay": 0,
+        "files": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts"
+        ]
+      }
+    }
+Perf 42   [14:28:39.498] 3::geterr: async elapsed time (in milliseconds) 0.6336
+Info 43   [14:28:39.500] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 44   [14:28:39.504] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 45   [14:28:39.505] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 46   [14:28:39.505] event:
+    {"seq":0,"type":"event","event":"requestCompleted","body":{"request_seq":3}}
+Info 47   [14:28:40.157] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-57 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 48   [14:28:40.157] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-57
+Info 49   [14:28:40.157] Elapsed:: 0.411634000018239ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-57 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 50   [14:28:42.352] request:
+    {
+      "seq": 4,
+      "type": "request",
+      "command": "projectInfo",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts",
+        "needFileNameList": false
+      }
+    }
+Perf 51   [14:28:42.352] 4::projectInfo: elapsed time (in milliseconds) 0.2996
+Info 52   [14:28:42.352] response:
+    {"seq":0,"type":"response","command":"projectInfo","request_seq":4,"success":true,"body":{"configFileName":"/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json","languageServiceDisabled":false}}
+Info 53   [14:28:42.357] request:
+    {
+      "seq": 5,
+      "type": "request",
+      "command": "configure",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts",
+        "formatOptions": {
+          "tabSize": 4,
+          "indentSize": 4,
+          "convertTabsToSpaces": true,
+          "newLineCharacter": "\n",
+          "insertSpaceAfterCommaDelimiter": true,
+          "insertSpaceAfterConstructor": false,
+          "insertSpaceAfterSemicolonInForStatements": true,
+          "insertSpaceBeforeAndAfterBinaryOperators": true,
+          "insertSpaceAfterKeywordsInControlFlowStatements": true,
+          "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+          "insertSpaceBeforeFunctionParenthesis": false,
+          "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+          "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+          "insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+          "insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+          "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+          "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+          "insertSpaceAfterTypeAssertion": false,
+          "placeOpenBraceOnNewLineForFunctions": false,
+          "placeOpenBraceOnNewLineForControlBlocks": false,
+          "semicolons": "ignore",
+          "indentSwitchCase": true
+        },
+        "preferences": {
+          "quotePreference": "auto",
+          "importModuleSpecifierEnding": "auto",
+          "jsxAttributeCompletionStyle": "auto",
+          "allowTextChangesInNewFiles": true,
+          "providePrefixAndSuffixTextForRename": true,
+          "allowRenameOfImportPath": true,
+          "includeAutomaticOptionalChainCompletions": true,
+          "provideRefactorNotApplicableReason": true,
+          "generateReturnInDocTemplate": true,
+          "includeCompletionsForImportStatements": true,
+          "includeCompletionsWithSnippetText": true,
+          "includeCompletionsWithClassMemberSnippets": true,
+          "includeCompletionsWithObjectLiteralMethodSnippets": true,
+          "autoImportFileExcludePatterns": [],
+          "useLabelDetailsInCompletionEntries": true,
+          "allowIncompleteCompletions": true,
+          "displayPartsForJSDoc": true,
+          "disableLineTextInReferences": true,
+          "interactiveInlayHints": true,
+          "includeInlayParameterNameHints": "none",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": false,
+          "includeInlayFunctionParameterTypeHints": false,
+          "includeInlayVariableTypeHints": false,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": false,
+          "includeInlayFunctionLikeReturnTypeHints": false,
+          "includeInlayEnumMemberValueHints": false
+        }
+      }
+    }
+Info 54   [14:28:42.357] Host configuration update for file /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts
+Info 55   [14:28:42.357] response:
+    {"seq":0,"type":"response","command":"configure","request_seq":5,"success":true}
+Perf 56   [14:28:42.357] 5::configure: async elapsed time (in milliseconds) 0.5521
+Info 57   [14:28:42.358] request:
+    {
+      "seq": 6,
+      "type": "request",
+      "command": "getApplicableRefactors",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts",
+        "startLine": 1,
+        "startOffset": 1,
+        "endLine": 1,
+        "endOffset": 1,
+        "includeInteractiveActions": true
+      }
+    }
+Perf 58   [14:28:42.387] 6::getApplicableRefactors: elapsed time (in milliseconds) 28.8114
+Info 59   [14:28:42.387] response:
+    {"seq":0,"type":"response","command":"getApplicableRefactors","request_seq":6,"success":true,"body":[{"name":"Convert export","description":"Convert default export to named export","actions":[{"name":"Convert default export to named export","description":"Convert default export to named export","kind":"refactor.rewrite.export.named","notApplicableReason":"Could not find export statement"},{"name":"Convert named export to default export","description":"Convert named export to default export","kind":"refactor.rewrite.export.default","notApplicableReason":"Could not find export statement"}]},{"name":"Convert import","description":"Convert namespace import to named imports","actions":[{"name":"Convert namespace import to named imports","description":"Convert namespace import to named imports","kind":"refactor.rewrite.import.named","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to default import","actions":[{"name":"Convert named imports to default import","description":"Convert named imports to default import","kind":"refactor.rewrite.import.default","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to namespace import","actions":[{"name":"Convert named imports to namespace import","description":"Convert named imports to namespace import","kind":"refactor.rewrite.import.namespace","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Extract type","description":"Extract type","actions":[{"name":"Extract to typedef","description":"Extract to typedef","kind":"refactor.extract.typedef","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to type alias","description":"Extract to type alias","kind":"refactor.extract.type","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to interface","description":"Extract to interface","kind":"refactor.extract.interface","notApplicableReason":"Selection is not a valid type node"}]},{"name":"Move to a new file","description":"Move to a new file","actions":[{"name":"Move to a new file","description":"Move to a new file","kind":"refactor.move.newFile"}]},{"name":"Move to file","description":"Move to file","actions":[{"name":"Move to file","description":"Move to file","kind":"refactor.move.file"}]},{"name":"Add or remove braces in an arrow function","description":"Add or remove braces in an arrow function","actions":[{"name":"Add braces to arrow function","description":"Add braces to arrow function","kind":"refactor.rewrite.arrow.braces.add","notApplicableReason":"Could not find a containing arrow function"},{"name":"Remove braces from arrow function","description":"Remove braces from arrow function","kind":"refactor.rewrite.arrow.braces.remove","notApplicableReason":"Could not find a containing arrow function"}]},{"name":"Convert to template string","description":"Convert to template string","actions":[{"name":"Convert to template string","description":"Convert to template string","kind":"refactor.rewrite.string","notApplicableReason":"Can only convert string concatenation"}]},{"name":"Extract Symbol","description":"Extract function","actions":[{"name":"Extract Function","description":"Extract function","kind":"refactor.extract.function","notApplicableReason":"Cannot extract empty range."}]},{"name":"Extract Symbol","description":"Extract constant","actions":[{"name":"Extract Constant","description":"Extract constant","kind":"refactor.extract.constant","notApplicableReason":"Cannot extract empty range."}]},{"name":"Infer function return type","description":"Infer function return type","actions":[{"name":"Infer function return type","description":"Infer function return type","kind":"refactor.rewrite.function.returnType","notApplicableReason":"Return type must be inferred from a function"}]}]}
+Info 60   [14:28:42.500] request:
+    {
+      "seq": 7,
+      "type": "request",
+      "command": "encodedSemanticClassifications-full",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts",
+        "start": 0,
+        "length": 26,
+        "format": "2020"
+      }
+    }
+Perf 61   [14:28:42.504] 7::encodedSemanticClassifications-full: elapsed time (in milliseconds) 3.1092
+Info 62   [14:28:42.504] response:
+    {"seq":0,"type":"response","command":"encodedSemanticClassifications-full","request_seq":7,"success":true,"body":{"spans":[13,3,2057],"endOfLineState":0}}
+Info 63   [14:28:42.600] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-58 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 64   [14:28:42.600] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-58
+Info 65   [14:28:42.600] Elapsed:: 0.1130680013448ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-58 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 66   [14:28:42.600] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-59 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 67   [14:28:42.600] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-59
+Info 68   [14:28:42.600] Elapsed:: 0.07129800133407116ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-59 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 69   [14:28:42.652] request:
+    {
+      "seq": 8,
+      "type": "request",
+      "command": "geterr",
+      "arguments": {
+        "delay": 0,
+        "files": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts"
+        ]
+      }
+    }
+Perf 70   [14:28:42.652] 8::geterr: async elapsed time (in milliseconds) 0.2053
+Info 71   [14:28:42.654] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 72   [14:28:42.654] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 73   [14:28:42.654] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 74   [14:28:42.654] event:
+    {"seq":0,"type":"event","event":"requestCompleted","body":{"request_seq":8}}
+Info 75   [14:28:44.977] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/Bar.ts :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 76   [14:28:44.989] Scheduled: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 77   [14:28:44.989] Scheduled: *ensureProjectForOpenFiles*
+Info 78   [14:28:44.989] Elapsed:: 1.0499829985201359ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/Bar.ts :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 79   [14:28:45.025] request:
+    {
+      "seq": 9,
+      "type": "request",
+      "command": "updateOpen",
+      "arguments": {
+        "changedFiles": [],
+        "closedFiles": [],
+        "openFiles": [
+          {
+            "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+            "fileContent": "",
+            "projectRootPath": "/Volumes/git/tsserver-new-file-intellisense-bug",
+            "scriptKindName": "TS"
+          }
+        ]
+      }
+    }
+Info 80   [14:28:45.025] Search path: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 81   [14:28:45.025] For info: /Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts :: Config file name: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 82   [14:28:45.026] Starting updateGraphWorker: Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 83   [14:28:45.027] Finishing updateGraphWorker: Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Version: 2 structureChanged: false structureIsReused:: Not Elapsed: 0.3838330004364252ms
+Info 84   [14:28:45.027] event:
+    {"seq":0,"type":"event","event":"configFileDiag","body":{"triggerFile":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","configFile":"/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json","diagnostics":[]}}
+Info 85   [14:28:45.028] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 86   [14:28:45.032] DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules 1 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 87   [14:28:45.032] Elapsed:: 0.018519001081585884ms DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules 1 undefined Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 88   [14:28:45.291] DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
+Info 89   [14:28:45.291] Elapsed:: 0.02493099868297577ms DirectoryWatcher:: Added:: WatchInfo: /Volumes/git/tsserver-new-file-intellisense-bug/node_modules/@types 1 undefined Project: /dev/null/inferredProject1* WatchType: Type roots
+Info 90   [14:28:45.291] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 262.843144999817ms
+Info 91   [14:28:45.291] Project '/dev/null/inferredProject1*' (Inferred)
+Info 92   [14:28:45.297] 	Files (49)
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2016.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.dom.iterable.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.scripthost.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.core.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.collection.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.generator.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.iterable.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.promise.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.proxy.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.reflect.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.symbol.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2016.array.include.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.date.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.object.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.string.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.intl.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.intl.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.promise.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.regexp.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.array.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.object.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.string.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.symbol.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.intl.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.bigint.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.date.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.promise.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.string.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.intl.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.number.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.full.d.ts
+	/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts
+
+
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts
+	  Library referenced via 'es5' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts
+	  Library referenced via 'es2015' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2016.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2016.d.ts
+	  Library referenced via 'es2016' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts
+	  Library referenced via 'es2017' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts
+	  Library referenced via 'es2018' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts
+	  Library referenced via 'es2019' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts
+	  Library referenced via 'es2020' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.full.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+	  Library referenced via 'dom' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.full.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.dom.iterable.d.ts
+	  Library referenced via 'dom.iterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.full.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+	  Library referenced via 'webworker.importscripts' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.full.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.scripthost.d.ts
+	  Library referenced via 'scripthost' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.full.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.core.d.ts
+	  Library referenced via 'es2015.core' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.collection.d.ts
+	  Library referenced via 'es2015.collection' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.generator.d.ts
+	  Library referenced via 'es2015.generator' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.iterable.d.ts
+	  Library referenced via 'es2015.iterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	  Library referenced via 'es2015.iterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.generator.d.ts'
+	  Library referenced via 'es2015.iterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts'
+	  Library referenced via 'es2015.iterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.object.d.ts'
+	  Library referenced via 'es2015.iterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.string.d.ts'
+	  Library referenced via 'es2015.iterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.promise.d.ts
+	  Library referenced via 'es2015.promise' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.proxy.d.ts
+	  Library referenced via 'es2015.proxy' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.reflect.d.ts
+	  Library referenced via 'es2015.reflect' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.symbol.d.ts
+	  Library referenced via 'es2015.symbol' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.iterable.d.ts'
+	  Library referenced via 'es2015.symbol' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	  Library referenced via 'es2015.symbol' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts'
+	  Library referenced via 'es2015.symbol' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts'
+	  Library referenced via 'es2015.symbol' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts'
+	  Library referenced via 'es2015.symbol' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+	  Library referenced via 'es2015.symbol.wellknown' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2015.d.ts'
+	  Library referenced via 'es2015.symbol.wellknown' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2016.array.include.d.ts
+	  Library referenced via 'es2016.array.include' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2016.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.date.d.ts
+	  Library referenced via 'es2017.date' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.object.d.ts
+	  Library referenced via 'es2017.object' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+	  Library referenced via 'es2017.sharedmemory' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.string.d.ts
+	  Library referenced via 'es2017.string' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.intl.d.ts
+	  Library referenced via 'es2017.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+	  Library referenced via 'es2017.typedarrays' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2017.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+	  Library referenced via 'es2018.asyncgenerator' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+	  Library referenced via 'es2018.asynciterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts'
+	  Library referenced via 'es2018.asynciterable' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.intl.d.ts
+	  Library referenced via 'es2018.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts'
+	  Library referenced via 'es2018.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.intl.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.promise.d.ts
+	  Library referenced via 'es2018.promise' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.regexp.d.ts
+	  Library referenced via 'es2018.regexp' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2018.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.array.d.ts
+	  Library referenced via 'es2019.array' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.object.d.ts
+	  Library referenced via 'es2019.object' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.string.d.ts
+	  Library referenced via 'es2019.string' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.symbol.d.ts
+	  Library referenced via 'es2019.symbol' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.intl.d.ts
+	  Library referenced via 'es2019.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2019.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.bigint.d.ts
+	  Library referenced via 'es2020.bigint' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.date.d.ts
+	  Library referenced via 'es2020.date' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.promise.d.ts
+	  Library referenced via 'es2020.promise' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts
+	  Library referenced via 'es2020.sharedmemory' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.string.d.ts
+	  Library referenced via 'es2020.string' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts
+	  Library referenced via 'es2020.symbol.wellknown' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.intl.d.ts
+	  Library referenced via 'es2020.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.bigint.d.ts'
+	  Library referenced via 'es2020.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.date.d.ts'
+	  Library referenced via 'es2020.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.number.d.ts'
+	  Library referenced via 'es2020.intl' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.number.d.ts
+	  Library referenced via 'es2020.number' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.d.ts
+	  Library referenced via 'decorators' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	  Library referenced via 'decorators.legacy' from file '../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es5.d.ts'
+	../../../Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/lib.es2020.full.d.ts
+	  Default library for target 'es2020'
+	Bar.ts
+	  Root file specified for compilation
+
+Info 93   [14:28:45.297] -----------------------------------------------
+Info 94   [14:28:45.298] Project '/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json' (Configured)
+Info 94   [14:28:45.298] 	Files (8)
+
+Info 94   [14:28:45.298] -----------------------------------------------
+Info 94   [14:28:45.298] Project '/dev/null/inferredProject1*' (Inferred)
+Info 94   [14:28:45.298] 	Files (49)
+
+Info 94   [14:28:45.298] -----------------------------------------------
+Info 94   [14:28:45.298] Open files: 
+Info 94   [14:28:45.298] 	FileName: /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts ProjectRootPath: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 94   [14:28:45.298] 		Projects: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 94   [14:28:45.298] 	FileName: /Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts ProjectRootPath: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 94   [14:28:45.298] 		Projects: /dev/null/inferredProject1*
+Perf 94   [14:28:45.298] 9::updateOpen: elapsed time (in milliseconds) 273.4389
+Info 95   [14:28:45.298] response:
+    {"seq":0,"type":"response","command":"updateOpen","request_seq":9,"success":true,"performanceData":{"updateGraphDurationMs":263.22697800025344},"body":true}
+Info 96   [14:28:45.298] Running: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 97   [14:28:45.299] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-60 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 98   [14:28:45.299] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-60
+Info 99   [14:28:45.299] Elapsed:: 0.046980999410152435ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-60 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 100  [14:28:45.299] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-61 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 101  [14:28:45.299] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-61
+Info 102  [14:28:45.299] Elapsed:: 0.03885199874639511ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-61 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 103  [14:28:45.299] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-62 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 104  [14:28:45.299] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-62
+Info 105  [14:28:45.299] Elapsed:: 0.03927699849009514ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-62 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 106  [14:28:45.347] request:
+    {
+      "seq": 10,
+      "type": "request",
+      "command": "projectInfo",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "needFileNameList": false
+      }
+    }
+Perf 107  [14:28:45.347] 10::projectInfo: elapsed time (in milliseconds) 0.1682
+Info 108  [14:28:45.347] response:
+    {"seq":0,"type":"response","command":"projectInfo","request_seq":10,"success":true,"body":{"configFileName":"/dev/null/inferredProject1*","languageServiceDisabled":false}}
+Info 109  [14:28:45.351] request:
+    {
+      "seq": 11,
+      "type": "request",
+      "command": "encodedSemanticClassifications-full",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "start": 0,
+        "length": 0,
+        "format": "2020"
+      }
+    }
+Perf 110  [14:28:45.352] 11::encodedSemanticClassifications-full: elapsed time (in milliseconds) 0.3164
+Info 111  [14:28:45.352] response:
+    {"seq":0,"type":"response","command":"encodedSemanticClassifications-full","request_seq":11,"success":true,"body":{"spans":[],"endOfLineState":0}}
+Info 112  [14:28:45.352] request:
+    {
+      "seq": 12,
+      "type": "request",
+      "command": "geterr",
+      "arguments": {
+        "delay": 0,
+        "files": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+          "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts"
+        ]
+      }
+    }
+Perf 113  [14:28:45.353] 12::geterr: async elapsed time (in milliseconds) 0.2345
+Info 114  [14:28:45.354] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 115  [14:28:45.354] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 116  [14:28:45.354] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 117  [14:28:45.356] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 118  [14:28:45.356] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 119  [14:28:45.356] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 120  [14:28:45.356] event:
+    {"seq":0,"type":"event","event":"requestCompleted","body":{"request_seq":12}}
+Info 121  [14:28:45.497] request:
+    {
+      "seq": 13,
+      "type": "request",
+      "command": "updateOpen",
+      "arguments": {
+        "changedFiles": [
+          {
+            "fileName": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+            "textChanges": [
+              {
+                "newText": "f",
+                "start": {
+                  "line": 1,
+                  "offset": 1
+                },
+                "end": {
+                  "line": 1,
+                  "offset": 1
+                }
+              }
+            ]
+          }
+        ],
+        "closedFiles": [],
+        "openFiles": []
+      }
+    }
+Perf 122  [14:28:45.498] 13::updateOpen: elapsed time (in milliseconds) 0.6161
+Info 123  [14:28:45.498] response:
+    {"seq":0,"type":"response","command":"updateOpen","request_seq":13,"success":true,"body":true}
+Info 124  [14:28:45.498] request:
+    {
+      "seq": 14,
+      "type": "request",
+      "command": "documentHighlights",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "line": 1,
+        "offset": 2,
+        "filesToSearch": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts"
+        ]
+      }
+    }
+Info 125  [14:28:45.499] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 126  [14:28:45.504] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: false structureIsReused:: Completely Elapsed: 5.131376000121236ms
+Info 127  [14:28:45.504] Different program with same set of files
+Perf 128  [14:28:45.506] 14::documentHighlights: elapsed time (in milliseconds) 7.7184
+Info 129  [14:28:45.506] response:
+    {"seq":0,"type":"response","command":"documentHighlights","request_seq":14,"success":true,"performanceData":{"updateGraphDurationMs":5.131376000121236},"body":[]}
+Info 130  [14:28:45.584] request:
+    {
+      "seq": 15,
+      "type": "request",
+      "command": "updateOpen",
+      "arguments": {
+        "changedFiles": [
+          {
+            "fileName": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+            "textChanges": [
+              {
+                "newText": "o",
+                "start": {
+                  "line": 1,
+                  "offset": 2
+                },
+                "end": {
+                  "line": 1,
+                  "offset": 2
+                }
+              }
+            ]
+          }
+        ],
+        "closedFiles": [],
+        "openFiles": []
+      }
+    }
+Perf 131  [14:28:45.584] 15::updateOpen: elapsed time (in milliseconds) 0.2429
+Info 132  [14:28:45.584] response:
+    {"seq":0,"type":"response","command":"updateOpen","request_seq":15,"success":true,"body":true}
+Info 133  [14:28:45.585] request:
+    {
+      "seq": 16,
+      "type": "request",
+      "command": "documentHighlights",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "line": 1,
+        "offset": 3,
+        "filesToSearch": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts"
+        ]
+      }
+    }
+Info 134  [14:28:45.585] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 135  [14:28:45.590] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: false structureIsReused:: Completely Elapsed: 4.579940000548959ms
+Info 136  [14:28:45.590] Different program with same set of files
+Perf 137  [14:28:45.590] 16::documentHighlights: elapsed time (in milliseconds) 5.5388
+Info 138  [14:28:45.590] response:
+    {"seq":0,"type":"response","command":"documentHighlights","request_seq":16,"success":true,"performanceData":{"updateGraphDurationMs":4.579940000548959},"body":[]}
+Info 139  [14:28:45.661] request:
+    {
+      "seq": 17,
+      "type": "request",
+      "command": "updateOpen",
+      "arguments": {
+        "changedFiles": [
+          {
+            "fileName": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+            "textChanges": [
+              {
+                "newText": "o",
+                "start": {
+                  "line": 1,
+                  "offset": 3
+                },
+                "end": {
+                  "line": 1,
+                  "offset": 3
+                }
+              }
+            ]
+          }
+        ],
+        "closedFiles": [],
+        "openFiles": []
+      }
+    }
+Perf 140  [14:28:45.661] 17::updateOpen: elapsed time (in milliseconds) 0.2539
+Info 141  [14:28:45.661] response:
+    {"seq":0,"type":"response","command":"updateOpen","request_seq":17,"success":true,"body":true}
+Info 142  [14:28:45.662] request:
+    {
+      "seq": 18,
+      "type": "request",
+      "command": "documentHighlights",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "line": 1,
+        "offset": 4,
+        "filesToSearch": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts"
+        ]
+      }
+    }
+Info 143  [14:28:45.662] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 144  [14:28:45.665] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 4 structureChanged: false structureIsReused:: Completely Elapsed: 2.8478900007903576ms
+Info 145  [14:28:45.665] Different program with same set of files
+Perf 146  [14:28:45.665] 18::documentHighlights: elapsed time (in milliseconds) 3.5803
+Info 147  [14:28:45.665] response:
+    {"seq":0,"type":"response","command":"documentHighlights","request_seq":18,"success":true,"performanceData":{"updateGraphDurationMs":2.8478900007903576},"body":[]}
+Info 148  [14:28:45.814] request:
+    {
+      "seq": 19,
+      "type": "request",
+      "command": "encodedSemanticClassifications-full",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "start": 0,
+        "length": 3,
+        "format": "2020"
+      }
+    }
+Perf 149  [14:28:45.814] 19::encodedSemanticClassifications-full: elapsed time (in milliseconds) 0.3629
+Info 150  [14:28:45.814] response:
+    {"seq":0,"type":"response","command":"encodedSemanticClassifications-full","request_seq":19,"success":true,"body":{"spans":[],"endOfLineState":0}}
+Info 151  [14:28:45.916] request:
+    {
+      "seq": 20,
+      "type": "request",
+      "command": "configure",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "formatOptions": {
+          "tabSize": 4,
+          "indentSize": 4,
+          "convertTabsToSpaces": true,
+          "newLineCharacter": "\n",
+          "insertSpaceAfterCommaDelimiter": true,
+          "insertSpaceAfterConstructor": false,
+          "insertSpaceAfterSemicolonInForStatements": true,
+          "insertSpaceBeforeAndAfterBinaryOperators": true,
+          "insertSpaceAfterKeywordsInControlFlowStatements": true,
+          "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+          "insertSpaceBeforeFunctionParenthesis": false,
+          "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+          "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+          "insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+          "insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+          "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+          "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+          "insertSpaceAfterTypeAssertion": false,
+          "placeOpenBraceOnNewLineForFunctions": false,
+          "placeOpenBraceOnNewLineForControlBlocks": false,
+          "semicolons": "ignore",
+          "indentSwitchCase": true
+        },
+        "preferences": {
+          "quotePreference": "auto",
+          "importModuleSpecifierEnding": "auto",
+          "jsxAttributeCompletionStyle": "auto",
+          "allowTextChangesInNewFiles": true,
+          "providePrefixAndSuffixTextForRename": true,
+          "allowRenameOfImportPath": true,
+          "includeAutomaticOptionalChainCompletions": true,
+          "provideRefactorNotApplicableReason": true,
+          "generateReturnInDocTemplate": true,
+          "includeCompletionsForImportStatements": true,
+          "includeCompletionsWithSnippetText": true,
+          "includeCompletionsWithClassMemberSnippets": true,
+          "includeCompletionsWithObjectLiteralMethodSnippets": true,
+          "autoImportFileExcludePatterns": [],
+          "useLabelDetailsInCompletionEntries": true,
+          "allowIncompleteCompletions": true,
+          "displayPartsForJSDoc": true,
+          "disableLineTextInReferences": true,
+          "interactiveInlayHints": true,
+          "includeInlayParameterNameHints": "none",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": false,
+          "includeInlayFunctionParameterTypeHints": false,
+          "includeInlayVariableTypeHints": false,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": false,
+          "includeInlayFunctionLikeReturnTypeHints": false,
+          "includeInlayEnumMemberValueHints": false
+        }
+      }
+    }
+Info 152  [14:28:45.916] Host configuration update for file /Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts
+Info 153  [14:28:45.916] response:
+    {"seq":0,"type":"response","command":"configure","request_seq":20,"success":true}
+Perf 154  [14:28:45.916] 20::configure: async elapsed time (in milliseconds) 0.4748
+Info 155  [14:28:45.917] request:
+    {
+      "seq": 21,
+      "type": "request",
+      "command": "getApplicableRefactors",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "startLine": 1,
+        "startOffset": 4,
+        "endLine": 1,
+        "endOffset": 4,
+        "includeInteractiveActions": true
+      }
+    }
+Perf 156  [14:28:45.917] 21::getApplicableRefactors: elapsed time (in milliseconds) 0.8860
+Info 157  [14:28:45.918] response:
+    {"seq":0,"type":"response","command":"getApplicableRefactors","request_seq":21,"success":true,"body":[{"name":"Convert export","description":"Convert default export to named export","actions":[{"name":"Convert default export to named export","description":"Convert default export to named export","kind":"refactor.rewrite.export.named","notApplicableReason":"This file already has a default export"},{"name":"Convert named export to default export","description":"Convert named export to default export","kind":"refactor.rewrite.export.default","notApplicableReason":"This file already has a default export"}]},{"name":"Convert import","description":"Convert namespace import to named imports","actions":[{"name":"Convert namespace import to named imports","description":"Convert namespace import to named imports","kind":"refactor.rewrite.import.named","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to default import","actions":[{"name":"Convert named imports to default import","description":"Convert named imports to default import","kind":"refactor.rewrite.import.default","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to namespace import","actions":[{"name":"Convert named imports to namespace import","description":"Convert named imports to namespace import","kind":"refactor.rewrite.import.namespace","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Extract type","description":"Extract type","actions":[{"name":"Extract to typedef","description":"Extract to typedef","kind":"refactor.extract.typedef","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to type alias","description":"Extract to type alias","kind":"refactor.extract.type","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to interface","description":"Extract to interface","kind":"refactor.extract.interface","notApplicableReason":"Selection is not a valid type node"}]},{"name":"Inline variable","description":"Inline variable","actions":[{"name":"Inline variable","description":"Inline variable","kind":"refactor.inline.variable","notApplicableReason":"Could not find variable to inline."}]},{"name":"Move to a new file","description":"Move to a new file","actions":[{"name":"Move to a new file","description":"Move to a new file","kind":"refactor.move.newFile","notApplicableReason":"Selection is not a valid statement or statements"}]},{"name":"Move to file","description":"Move to file","actions":[{"name":"Move to file","description":"Move to file","kind":"refactor.move.file","notApplicableReason":"Selection is not a valid statement or statements"}]},{"name":"Add or remove braces in an arrow function","description":"Add or remove braces in an arrow function","actions":[{"name":"Add braces to arrow function","description":"Add braces to arrow function","kind":"refactor.rewrite.arrow.braces.add","notApplicableReason":"Could not find a containing arrow function"},{"name":"Remove braces from arrow function","description":"Remove braces from arrow function","kind":"refactor.rewrite.arrow.braces.remove","notApplicableReason":"Could not find a containing arrow function"}]},{"name":"Convert to template string","description":"Convert to template string","actions":[{"name":"Convert to template string","description":"Convert to template string","kind":"refactor.rewrite.string","notApplicableReason":"Can only convert string concatenation"}]},{"name":"Extract Symbol","description":"Extract function","actions":[{"name":"Extract Function","description":"Extract function","kind":"refactor.extract.function","notApplicableReason":"Cannot extract empty range."}]},{"name":"Extract Symbol","description":"Extract constant","actions":[{"name":"Extract Constant","description":"Extract constant","kind":"refactor.extract.constant","notApplicableReason":"Cannot extract empty range."}]},{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","actions":[{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","kind":"refactor.rewrite.property.generateAccessors","notApplicableReason":"Could not find property for which to generate accessor"}]},{"name":"Infer function return type","description":"Infer function return type","actions":[{"name":"Infer function return type","description":"Infer function return type","kind":"refactor.rewrite.function.returnType","notApplicableReason":"Return type must be inferred from a function"}]}]}
+Info 158  [14:28:45.964] request:
+    {
+      "seq": 22,
+      "type": "request",
+      "command": "geterr",
+      "arguments": {
+        "delay": 0,
+        "files": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+          "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts"
+        ]
+      }
+    }
+Perf 159  [14:28:45.964] 22::geterr: async elapsed time (in milliseconds) 0.4691
+Info 160  [14:28:45.966] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 161  [14:28:45.971] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[{"start":{"line":1,"offset":1},"end":{"line":1,"offset":4},"text":"Cannot find name 'foo'.","code":2304,"category":"error"}]}}
+Info 162  [14:28:45.971] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 163  [14:28:45.973] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 164  [14:28:45.973] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 165  [14:28:45.973] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 166  [14:28:45.973] event:
+    {"seq":0,"type":"event","event":"requestCompleted","body":{"request_seq":22}}
+Info 167  [14:28:46.101] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-63 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 168  [14:28:46.101] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-63
+Info 169  [14:28:46.101] Elapsed:: 0.11558900028467178ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-63 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 170  [14:28:46.137] request:
+    {
+      "seq": 23,
+      "type": "request",
+      "command": "documentHighlights",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "line": 1,
+        "offset": 3,
+        "filesToSearch": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts"
+        ]
+      }
+    }
+Perf 171  [14:28:46.137] 23::documentHighlights: elapsed time (in milliseconds) 0.3311
+Info 172  [14:28:46.137] response:
+    {"seq":0,"type":"response","command":"documentHighlights","request_seq":23,"success":true,"body":[]}
+Info 173  [14:28:46.349] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/Bar.ts :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 174  [14:28:46.362] Scheduled: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 175  [14:28:46.362] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
+Info 176  [14:28:46.362] Elapsed:: 0.7843779996037483ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/Bar.ts :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 177  [14:28:46.389] request:
+    {
+      "seq": 24,
+      "type": "request",
+      "command": "updateOpen",
+      "arguments": {
+        "changedFiles": [
+          {
+            "fileName": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+            "textChanges": [
+              {
+                "newText": "\n",
+                "start": {
+                  "line": 1,
+                  "offset": 4
+                },
+                "end": {
+                  "line": 1,
+                  "offset": 4
+                }
+              }
+            ]
+          }
+        ],
+        "closedFiles": [],
+        "openFiles": []
+      }
+    }
+Perf 178  [14:28:46.390] 24::updateOpen: elapsed time (in milliseconds) 0.1646
+Info 179  [14:28:46.390] response:
+    {"seq":0,"type":"response","command":"updateOpen","request_seq":24,"success":true,"body":true}
+Info 180  [14:28:46.390] request:
+    {
+      "seq": 25,
+      "type": "request",
+      "command": "getApplicableRefactors",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "startLine": 1,
+        "startOffset": 3,
+        "endLine": 1,
+        "endOffset": 3,
+        "includeInteractiveActions": true
+      }
+    }
+Info 181  [14:28:46.390] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 182  [14:28:46.393] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 5 structureChanged: false structureIsReused:: Completely Elapsed: 2.9901090003550053ms
+Info 183  [14:28:46.393] Different program with same set of files
+Perf 184  [14:28:46.394] 25::getApplicableRefactors: elapsed time (in milliseconds) 3.7098
+Info 185  [14:28:46.394] response:
+    {"seq":0,"type":"response","command":"getApplicableRefactors","request_seq":25,"success":true,"performanceData":{"updateGraphDurationMs":2.9901090003550053},"body":[{"name":"Convert export","description":"Convert default export to named export","actions":[{"name":"Convert default export to named export","description":"Convert default export to named export","kind":"refactor.rewrite.export.named","notApplicableReason":"Could not find export statement"},{"name":"Convert named export to default export","description":"Convert named export to default export","kind":"refactor.rewrite.export.default","notApplicableReason":"Could not find export statement"}]},{"name":"Convert import","description":"Convert namespace import to named imports","actions":[{"name":"Convert namespace import to named imports","description":"Convert namespace import to named imports","kind":"refactor.rewrite.import.named","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to default import","actions":[{"name":"Convert named imports to default import","description":"Convert named imports to default import","kind":"refactor.rewrite.import.default","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to namespace import","actions":[{"name":"Convert named imports to namespace import","description":"Convert named imports to namespace import","kind":"refactor.rewrite.import.namespace","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Extract type","description":"Extract type","actions":[{"name":"Extract to typedef","description":"Extract to typedef","kind":"refactor.extract.typedef","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to type alias","description":"Extract to type alias","kind":"refactor.extract.type","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to interface","description":"Extract to interface","kind":"refactor.extract.interface","notApplicableReason":"Selection is not a valid type node"}]},{"name":"Inline variable","description":"Inline variable","actions":[{"name":"Inline variable","description":"Inline variable","kind":"refactor.inline.variable","notApplicableReason":"Could not find variable to inline."}]},{"name":"Move to a new file","description":"Move to a new file","actions":[{"name":"Move to a new file","description":"Move to a new file","kind":"refactor.move.newFile"}]},{"name":"Move to file","description":"Move to file","actions":[{"name":"Move to file","description":"Move to file","kind":"refactor.move.file"}]},{"name":"Add or remove braces in an arrow function","description":"Add or remove braces in an arrow function","actions":[{"name":"Add braces to arrow function","description":"Add braces to arrow function","kind":"refactor.rewrite.arrow.braces.add","notApplicableReason":"Could not find a containing arrow function"},{"name":"Remove braces from arrow function","description":"Remove braces from arrow function","kind":"refactor.rewrite.arrow.braces.remove","notApplicableReason":"Could not find a containing arrow function"}]},{"name":"Convert to template string","description":"Convert to template string","actions":[{"name":"Convert to template string","description":"Convert to template string","kind":"refactor.rewrite.string","notApplicableReason":"Can only convert string concatenation"}]},{"name":"Extract Symbol","description":"Extract function","actions":[{"name":"Extract Function","description":"Extract function","kind":"refactor.extract.function","notApplicableReason":"Cannot extract empty range."}]},{"name":"Extract Symbol","description":"Extract constant","actions":[{"name":"Extract Constant","description":"Extract constant","kind":"refactor.extract.constant","notApplicableReason":"Cannot extract empty range."}]},{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","actions":[{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","kind":"refactor.rewrite.property.generateAccessors","notApplicableReason":"Could not find property for which to generate accessor"}]},{"name":"Infer function return type","description":"Infer function return type","actions":[{"name":"Infer function return type","description":"Infer function return type","kind":"refactor.rewrite.function.returnType","notApplicableReason":"Return type must be inferred from a function"}]}]}
+Info 186  [14:28:46.400] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/Bar.ts :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 187  [14:28:46.400] Scheduled: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json, Cancelled earlier one
+Info 188  [14:28:46.400] Scheduled: *ensureProjectForOpenFiles*, Cancelled earlier one
+Info 189  [14:28:46.400] Elapsed:: 0.35018499940633774ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/Bar.ts :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 190  [14:28:46.400] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-64 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 191  [14:28:46.400] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-64
+Info 192  [14:28:46.400] Elapsed:: 0.059244001284241676ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-64 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 193  [14:28:46.487] request:
+    {
+      "seq": 26,
+      "type": "request",
+      "command": "encodedSemanticClassifications-full",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "start": 0,
+        "length": 4,
+        "format": "2020"
+      }
+    }
+Perf 194  [14:28:46.488] 26::encodedSemanticClassifications-full: elapsed time (in milliseconds) 0.4957
+Info 195  [14:28:46.488] response:
+    {"seq":0,"type":"response","command":"encodedSemanticClassifications-full","request_seq":26,"success":true,"body":{"spans":[],"endOfLineState":0}}
+Info 196  [14:28:46.650] Running: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 197  [14:28:46.651] Starting updateGraphWorker: Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 198  [14:28:46.651] Finishing updateGraphWorker: Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Version: 3 structureChanged: false structureIsReused:: Not Elapsed: 0.17000499926507473ms
+Info 199  [14:28:46.669] request:
+    {
+      "seq": 27,
+      "type": "request",
+      "command": "geterr",
+      "arguments": {
+        "delay": 0,
+        "files": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+          "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts"
+        ]
+      }
+    }
+Perf 200  [14:28:46.669] 27::geterr: async elapsed time (in milliseconds) 0.2211
+Info 201  [14:28:46.670] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 202  [14:28:46.672] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[{"start":{"line":1,"offset":1},"end":{"line":1,"offset":4},"text":"Cannot find name 'foo'.","code":2304,"category":"error"}]}}
+Info 203  [14:28:46.672] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 204  [14:28:46.673] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 205  [14:28:46.674] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 206  [14:28:46.674] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 207  [14:28:46.674] event:
+    {"seq":0,"type":"event","event":"requestCompleted","body":{"request_seq":27}}
+Info 208  [14:28:46.693] request:
+    {
+      "seq": 28,
+      "type": "request",
+      "command": "getApplicableRefactors",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "startLine": 1,
+        "startOffset": 3,
+        "endLine": 1,
+        "endOffset": 3,
+        "triggerReason": "invoked",
+        "includeInteractiveActions": true
+      }
+    }
+Perf 209  [14:28:46.694] 28::getApplicableRefactors: elapsed time (in milliseconds) 0.8754
+Info 210  [14:28:46.694] response:
+    {"seq":0,"type":"response","command":"getApplicableRefactors","request_seq":28,"success":true,"body":[{"name":"Convert export","description":"Convert default export to named export","actions":[{"name":"Convert default export to named export","description":"Convert default export to named export","kind":"refactor.rewrite.export.named","notApplicableReason":"Could not find export statement"},{"name":"Convert named export to default export","description":"Convert named export to default export","kind":"refactor.rewrite.export.default","notApplicableReason":"Could not find export statement"}]},{"name":"Convert import","description":"Convert namespace import to named imports","actions":[{"name":"Convert namespace import to named imports","description":"Convert namespace import to named imports","kind":"refactor.rewrite.import.named","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to default import","actions":[{"name":"Convert named imports to default import","description":"Convert named imports to default import","kind":"refactor.rewrite.import.default","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to namespace import","actions":[{"name":"Convert named imports to namespace import","description":"Convert named imports to namespace import","kind":"refactor.rewrite.import.namespace","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Extract type","description":"Extract type","actions":[{"name":"Extract to typedef","description":"Extract to typedef","kind":"refactor.extract.typedef","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to type alias","description":"Extract to type alias","kind":"refactor.extract.type","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to interface","description":"Extract to interface","kind":"refactor.extract.interface","notApplicableReason":"Selection is not a valid type node"}]},{"name":"Inline variable","description":"Inline variable","actions":[{"name":"Inline variable","description":"Inline variable","kind":"refactor.inline.variable","notApplicableReason":"Variables with multiple declarations cannot be inlined."}]},{"name":"Move to a new file","description":"Move to a new file","actions":[{"name":"Move to a new file","description":"Move to a new file","kind":"refactor.move.newFile"}]},{"name":"Move to file","description":"Move to file","actions":[{"name":"Move to file","description":"Move to file","kind":"refactor.move.file"}]},{"name":"Add or remove braces in an arrow function","description":"Add or remove braces in an arrow function","actions":[{"name":"Add braces to arrow function","description":"Add braces to arrow function","kind":"refactor.rewrite.arrow.braces.add","notApplicableReason":"Could not find a containing arrow function"},{"name":"Remove braces from arrow function","description":"Remove braces from arrow function","kind":"refactor.rewrite.arrow.braces.remove","notApplicableReason":"Could not find a containing arrow function"}]},{"name":"Convert to template string","description":"Convert to template string","actions":[{"name":"Convert to template string","description":"Convert to template string","kind":"refactor.rewrite.string","notApplicableReason":"Can only convert string concatenation"}]},{"name":"Convert to optional chain expression","description":"Convert to optional chain expression","actions":[{"name":"Convert to optional chain expression","description":"Convert to optional chain expression","kind":"refactor.rewrite.expression.optionalChain","notApplicableReason":"Could not find convertible access expression"}]},{"name":"Extract Symbol","description":"Extract function","actions":[{"name":"Extract Function","description":"Extract function","kind":"refactor.extract.function","notApplicableReason":"Select more than a single identifier."}]},{"name":"Extract Symbol","description":"Extract constant","actions":[{"name":"Extract Constant","description":"Extract constant","kind":"refactor.extract.constant","notApplicableReason":"Select more than a single identifier."}]},{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","actions":[{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","kind":"refactor.rewrite.property.generateAccessors","notApplicableReason":"Could not find property for which to generate accessor"}]},{"name":"Infer function return type","description":"Infer function return type","actions":[{"name":"Infer function return type","description":"Infer function return type","kind":"refactor.rewrite.function.returnType","notApplicableReason":"Return type must be inferred from a function"}]}]}
+Info 211  [14:28:46.694] request:
+    {
+      "seq": 29,
+      "type": "request",
+      "command": "getCodeFixes",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "startLine": 1,
+        "startOffset": 1,
+        "endLine": 1,
+        "endOffset": 4,
+        "errorCodes": [
+          2304
+        ]
+      }
+    }
+Perf 212  [14:28:46.697] 29::getCodeFixes: elapsed time (in milliseconds) 2.4299
+Info 213  [14:28:46.697] response:
+    {"seq":0,"type":"response","command":"getCodeFixes","request_seq":29,"success":true,"body":[]}
+Info 214  [14:28:46.979] request:
+    {
+      "seq": 30,
+      "type": "request",
+      "command": "getApplicableRefactors",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "startLine": 1,
+        "startOffset": 3,
+        "endLine": 1,
+        "endOffset": 3,
+        "includeInteractiveActions": true
+      }
+    }
+Perf 215  [14:28:46.979] 30::getApplicableRefactors: elapsed time (in milliseconds) 0.7931
+Info 216  [14:28:46.980] response:
+    {"seq":0,"type":"response","command":"getApplicableRefactors","request_seq":30,"success":true,"body":[{"name":"Convert export","description":"Convert default export to named export","actions":[{"name":"Convert default export to named export","description":"Convert default export to named export","kind":"refactor.rewrite.export.named","notApplicableReason":"Could not find export statement"},{"name":"Convert named export to default export","description":"Convert named export to default export","kind":"refactor.rewrite.export.default","notApplicableReason":"Could not find export statement"}]},{"name":"Convert import","description":"Convert namespace import to named imports","actions":[{"name":"Convert namespace import to named imports","description":"Convert namespace import to named imports","kind":"refactor.rewrite.import.named","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to default import","actions":[{"name":"Convert named imports to default import","description":"Convert named imports to default import","kind":"refactor.rewrite.import.default","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Convert import","description":"Convert named imports to namespace import","actions":[{"name":"Convert named imports to namespace import","description":"Convert named imports to namespace import","kind":"refactor.rewrite.import.namespace","notApplicableReason":"Selection is not an import declaration."}]},{"name":"Extract type","description":"Extract type","actions":[{"name":"Extract to typedef","description":"Extract to typedef","kind":"refactor.extract.typedef","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to type alias","description":"Extract to type alias","kind":"refactor.extract.type","notApplicableReason":"Selection is not a valid type node"},{"name":"Extract to interface","description":"Extract to interface","kind":"refactor.extract.interface","notApplicableReason":"Selection is not a valid type node"}]},{"name":"Inline variable","description":"Inline variable","actions":[{"name":"Inline variable","description":"Inline variable","kind":"refactor.inline.variable","notApplicableReason":"Could not find variable to inline."}]},{"name":"Move to a new file","description":"Move to a new file","actions":[{"name":"Move to a new file","description":"Move to a new file","kind":"refactor.move.newFile"}]},{"name":"Move to file","description":"Move to file","actions":[{"name":"Move to file","description":"Move to file","kind":"refactor.move.file"}]},{"name":"Add or remove braces in an arrow function","description":"Add or remove braces in an arrow function","actions":[{"name":"Add braces to arrow function","description":"Add braces to arrow function","kind":"refactor.rewrite.arrow.braces.add","notApplicableReason":"Could not find a containing arrow function"},{"name":"Remove braces from arrow function","description":"Remove braces from arrow function","kind":"refactor.rewrite.arrow.braces.remove","notApplicableReason":"Could not find a containing arrow function"}]},{"name":"Convert to template string","description":"Convert to template string","actions":[{"name":"Convert to template string","description":"Convert to template string","kind":"refactor.rewrite.string","notApplicableReason":"Can only convert string concatenation"}]},{"name":"Extract Symbol","description":"Extract function","actions":[{"name":"Extract Function","description":"Extract function","kind":"refactor.extract.function","notApplicableReason":"Cannot extract empty range."}]},{"name":"Extract Symbol","description":"Extract constant","actions":[{"name":"Extract Constant","description":"Extract constant","kind":"refactor.extract.constant","notApplicableReason":"Cannot extract empty range."}]},{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","actions":[{"name":"Generate 'get' and 'set' accessors","description":"Generate 'get' and 'set' accessors","kind":"refactor.rewrite.property.generateAccessors","notApplicableReason":"Could not find property for which to generate accessor"}]},{"name":"Infer function return type","description":"Infer function return type","actions":[{"name":"Infer function return type","description":"Infer function return type","kind":"refactor.rewrite.function.returnType","notApplicableReason":"Return type must be inferred from a function"}]}]}
+Info 217  [14:28:46.980] request:
+    {
+      "seq": 31,
+      "type": "request",
+      "command": "getCodeFixes",
+      "arguments": {
+        "file": "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts",
+        "startLine": 1,
+        "startOffset": 1,
+        "endLine": 1,
+        "endOffset": 4,
+        "errorCodes": [
+          2304
+        ]
+      }
+    }
+Perf 218  [14:28:46.981] 31::getCodeFixes: elapsed time (in milliseconds) 0.6664
+Info 219  [14:28:46.981] response:
+    {"seq":0,"type":"response","command":"getCodeFixes","request_seq":31,"success":true,"body":[]}
+Info 220  [14:28:48.901] Running: *ensureProjectForOpenFiles*
+Info 221  [14:28:48.901] Before ensureProjectForOpenFiles:
+Info 222  [14:28:48.901] Project '/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json' (Configured)
+Info 222  [14:28:48.901] 	Files (8)
+
+Info 222  [14:28:48.902] -----------------------------------------------
+Info 222  [14:28:48.902] Project '/dev/null/inferredProject1*' (Inferred)
+Info 222  [14:28:48.902] 	Files (49)
+
+Info 222  [14:28:48.902] -----------------------------------------------
+Info 222  [14:28:48.902] Open files: 
+Info 222  [14:28:48.902] 	FileName: /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts ProjectRootPath: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 222  [14:28:48.902] 		Projects: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 222  [14:28:48.902] 	FileName: /Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts ProjectRootPath: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 222  [14:28:48.902] 		Projects: /dev/null/inferredProject1*
+Info 222  [14:28:48.902] After ensureProjectForOpenFiles:
+Info 223  [14:28:48.902] Project '/Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json' (Configured)
+Info 223  [14:28:48.902] 	Files (8)
+
+Info 223  [14:28:48.902] -----------------------------------------------
+Info 223  [14:28:48.902] Project '/dev/null/inferredProject1*' (Inferred)
+Info 223  [14:28:48.902] 	Files (49)
+
+Info 223  [14:28:48.902] -----------------------------------------------
+Info 223  [14:28:48.902] Open files: 
+Info 223  [14:28:48.902] 	FileName: /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts ProjectRootPath: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 223  [14:28:48.903] 		Projects: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json
+Info 223  [14:28:48.903] 	FileName: /Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts ProjectRootPath: /Volumes/git/tsserver-new-file-intellisense-bug
+Info 223  [14:28:48.903] 		Projects: /dev/null/inferredProject1*
+Info 223  [14:28:48.903] got projects updated in background, updating diagnostics for /Volumes/git/tsserver-new-file-intellisense-bug/foo.ts,/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts
+Info 224  [14:28:48.903] event:
+    {"seq":0,"type":"event","event":"projectsUpdatedInBackground","body":{"openFiles":["/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts"]}}
+Info 225  [14:28:49.105] request:
+    {
+      "seq": 32,
+      "type": "request",
+      "command": "geterr",
+      "arguments": {
+        "delay": 0,
+        "files": [
+          "/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts",
+          "/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts"
+        ]
+      }
+    }
+Perf 226  [14:28:49.105] 32::geterr: async elapsed time (in milliseconds) 0.4093
+Info 227  [14:28:49.107] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 228  [14:28:49.107] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 229  [14:28:49.108] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/foo.ts","diagnostics":[]}}
+Info 230  [14:28:49.109] event:
+    {"seq":0,"type":"event","event":"syntaxDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 231  [14:28:49.110] event:
+    {"seq":0,"type":"event","event":"semanticDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[{"start":{"line":1,"offset":1},"end":{"line":1,"offset":4},"text":"Cannot find name 'foo'.","code":2304,"category":"error"}]}}
+Info 232  [14:28:49.110] event:
+    {"seq":0,"type":"event","event":"suggestionDiag","body":{"file":"/Volumes/git/tsserver-new-file-intellisense-bug/Bar.ts","diagnostics":[]}}
+Info 233  [14:28:49.110] event:
+    {"seq":0,"type":"event","event":"requestCompleted","body":{"request_seq":32}}
+Info 234  [14:28:51.147] DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-65 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
+Info 235  [14:28:51.147] Project: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json Detected ignored path: /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-65
+Info 236  [14:28:51.147] Elapsed:: 0.13668000139296055ms DirectoryWatcher:: Triggered with /volumes/git/tsserver-new-file-intellisense-bug/.git/fsmonitor--daemon/cookies/22301-65 :: WatchInfo: /volumes/git/tsserver-new-file-intellisense-bug 1 undefined Config: /Volumes/git/tsserver-new-file-intellisense-bug/tsconfig.json WatchType: Wild card directory
